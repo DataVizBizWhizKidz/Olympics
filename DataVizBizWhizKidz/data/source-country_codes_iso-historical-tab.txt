@@ -1,0 +1,232 @@
+Netherlands	AHO					
+Algeria	ALG					
+Angola	ANG					
+Australasia	ANZ					
+Aruba	ARU					
+American Samoa	ASA	An unincorporated territory of the US				
+Bahamas	BAH					
+Bangladesh	BAN					
+Barbados	BAR					
+Bermuda	BER					
+Bhutan	BHU					
+Belize	BIZ					
+Kinhgdom of Bohemia	BOH	An automonous part of Austria-Hungary until 1918				
+Botswana	BOT					
+Brunei	BRU					
+Bulgaria	BUL					
+Burkina Faso	BUR					
+Cambodia	CAM					
+Cayman Islands	CAY					
+Republic of Congo	CGO					
+Chad	CHA					
+Chile	CHI					
+Costa Rica	CRC					
+Croatia	CRO					
+Greece	CRT	Crete was an independent Island now part of Greece				
+Denmark	DEN					
+El Salvador 	ESA					
+Union of Soviet Socialist Republics 	EUN					
+Fiji	FIJ					
+West Germany	FRG	Now Germany				
+The Gambia	GAM					
+Guinea Bissau	GBS					
+East Germany	GDR					
+Equatorial Guinea	GEQ					
+Germany	GER					
+Greece	GRE					
+Grenada	GRN					
+Guatemala	GUA					
+Guinea	GUI					
+Haiti	HAI					
+Honduras	HON					
+Indonesia	INA					
+Netherlands Antilles	IOA					
+Iran	IRI					
+Virgin Islands	ISV					
+British Virgin Islands	IVB					
+Kosovo	KOS					
+Saudi Arabia	KSA					
+Kuwait	KUW					
+Latvia	LAT					
+Libya	LBA					
+Lesotho	LES					
+Lebanon	LIB					
+Madagascar	MAD					
+Malasya	MAL					
+Malasya	MAS					
+Malawi	MAW					
+Mongolia	MGL					
+Monaco	MON					
+Mauritius	MRI					
+Mauritania	MTN					
+Myanmar	MYA					
+Malaysia	NBO	Before North Borneo				
+Nicaragua	NCA					
+Netherlands	NED					
+Nepal	NEP					
+NONE	NFL					
+Nigeria	NGR					
+Niger	NIG					
+Oman	OMA					
+Paraguay	PAR					
+Philippines	PHI					
+Palestine	PLE					
+Portugal	POR					
+Puerto Rico	PUR					
+Zimbabwe	RHO	Before Northem Rhodesia				
+Refugee Olymic Team	ROT	Athlets displaced from their homw countries				
+South Africa	RSA					
+Germany	SAA	Before joining Germany was Saar				
+Samoa	SAM					
+Serbia and Montenegro	SCG	Disolved and independent each other now				
+Seychelles	SEY					
+Saint Kitts and Nevis	SKN					
+Slovenia	SLO					
+Solomon Islands	SOL					
+Sri Lanka	SRI					
+Sudan	SUD					
+Switzerland	SUI					
+Tanzania	TAN					
+Czechoslovakia	TCH					
+Tonga	TGA					
+Togo	TOG					
+Chinise Taipei	TPE					
+United Arab Emirates	UAE					
+Egypt 	UAR	Used to be United Arab Republic before becoming part of Egypt				
+NONE	UNK					
+Soviet Union	URS					
+Uruguay	URU					
+Vanuatu	VAN					
+Vietnam	VIE					
+Saint Vincent and the Grenadines	VIN					
+NONE	WIF					
+North Yemen	YAR					
+South Yemen	YMD					
+Yugoslavia	YUG					
+Zambia	ZAM					
+Zimbabwe	ZIM					
+Netherlands	ABW	Laso know as Aruba				
+Trinidad and Tobago	AGO					
+Anguilla	AIA					
+Aland Islands	ALA					
+United Arab Emirates	ARE					
+American Samoa	ASM					
+Antartica	ATA					
+French Southern Territories	ATF					
+Antigua and Barbuda	ATG					
+Burkina Faso	BFA					
+Bangladesh	BGD					
+Bulgaria	BGR					
+Bahrain	BHR					
+Bahamas	BHS					
+Saint Barthélemy	BLM					
+Belize	BLZ					
+Bermuda	BMU					
+Barbados	BRB					`
+Buthan	BTN					
+Bouvet Island	BVT					
+Botswana	BWA					
+Seychelle	CHE					
+Cocos Islands 	CCK					
+Chile	CHL					
+Congo	COG					
+Costa RIca	CRI					
+Christmas Island	CXR					
+Cayman Islands	CYM					
+Germany	DEU					
+Denmark	DNK					
+Algeria	DZA					
+Bangladesh	ESH					
+Fiji	FJI					
+ Falkland Islands	FLK					
+Faroe Islands	FRO					
+Guernsey	GGY					
+Gibraltar	GIB					
+Guinea	GIN					
+Guadeloupe	GLP					
+Gambia	GMB					
+Guinea-Bissau	GNB					
+Equatorial Guinea	GNQ					
+Greece	GRC					
+Grenada	GRD					
+Greenland	GRL					
+Guatemala	GTM					
+French Guiana	GUF					
+Heard Island and McDonald Islands	HMD					
+Honduras	HND					
+Croatia	HRV					
+The Republic of Haiti	HTI					
+The Republic of Indonesia	IDN					
+Isle of Man	IMN					
+British Indian Ocean Territory	IOT					
+Iran	IRN					
+Jersey	JEY					
+Cambodia	KHM					
+Saint Kitts and Nevis	KNA					
+Kuwait	KWT					
+Lebanon	LBN					
+Libya	LBY					
+Sri Lanka	LKA					
+Lesotho	LSO					
+Latvia	LVA					
+Macao	MAC					
+Monaco	MCO					
+Madagascar	MDG					
+Myanmar	MMR					
+Mongolia	MNG					
+Northern Mariana Islands	MNP					
+Mauritania	MRT					
+Montserrat	MSR					
+Martinique	MTQ					
+Mauritius	MUS					
+Malawi	MWI					
+Malaysia	MYS					
+Mayotte	MYT					
+New Caledonia	NCL					
+Niger	NER					
+Norfolk Island	NFK					
+Singapore	NGA					
+Nicaragua	NIC					
+Niue	NIU					
+Netherlands	NLD					
+Nepal	NPL					
+Oman	OMN					
+Pitcairn	PCN					
+Philippines	PHL					
+Puerto Rico	PRI					
+Portugal	PRT					
+Paraguay	PRY					
+France	PSE					
+France	PYF					
+France	REU					
+Saudi Arabia	SAU					
+Sudan	SDN					
+United Kingdom	SGS	South Georgia and the South Sandwich Islands				
+United Kingdom	SHN	"Saint Helena, Ascension and Tristan da Cunha"				
+Norway	SJM	Svalbard and Jan Mayen				
+Solomon Islands	SLB					
+France	SLV	Saint Pierre and Miquelon				
+France	SPM	Saint Pierre and Miquelon				
+Slovenia	SVN					
+Seychelles	SYC					
+United Kingdom	TCA	Pitcairn				
+Chad	TCD					
+Togo	TGO					
+New Zeleand	TKL	Tokelau				
+Tonga	TON					
+Taiwan	TWN					
+Tanzania	TZA					
+United States	UMI	"Baker Island, Howland Island, Jarvis Island, Johnston Atoll, Kingman Reef, Midway Atoll, Navassa Island, Palmyra Atoll, and Wake Island"				
+Uruguay	URY					
+Holy See	VAT					
+Saint Vincent and the Grenadines	VCT					
+United Kingdom	VGB	Virgin Islands				
+United States	VIR	Virgin Islands				
+Vanuatu	VUT					
+France	WLF	Wallis and Futuna				
+Samoa	WSM					
+South Africa	ZAF					
+Zambia	ZMB					
+Zimbabwe	ZWE					
+Canada	NFL	"Before becoming a prince of Canada, Newfoundland was an independent island called Newfoundland"				
+West Indies Federation	WIF					
