@@ -1,0 +1,1317 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.19.1211.1636                               -->
+<workbook original-version='18.1' source-build='2019.4.1 (20194.19.1211.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cleaned-historical_and_current_country_codes+' inline='true' name='federated.0b9l445140eyer1ay6kdy0vh190o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned-historical_and_current_country_codes' name='textscan.0hf7gz71u9lkkz10j14ay1s1r2mn'>
+            <connection class='textscan' directory='C:/Users/aaegg/Documents/INFORMATION VISUALIZATION/Final Project/data' filename='cleaned-historical_and_current_country_codes.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation join='full' type='join'>
+          <relation join='inner' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[cleaned-historical_and_current_country_codes.csv].[country_code]' />
+                <expression op='[cleaned-historical_athletes_dataset.csv].[country_code]' />
+              </expression>
+            </clause>
+            <relation connection='textscan.0hf7gz71u9lkkz10j14ay1s1r2mn' name='cleaned-historical_and_current_country_codes.csv' table='[cleaned-historical_and_current_country_codes#csv]' type='table'>
+              <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+                <column datatype='string' name='country_code' ordinal='0' />
+                <column datatype='string' name='country_name' ordinal='1' />
+              </columns>
+            </relation>
+            <relation connection='textscan.0hf7gz71u9lkkz10j14ay1s1r2mn' name='cleaned-historical_athletes_dataset.csv' table='[cleaned-historical_athletes_dataset#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                <column datatype='string' name='name' ordinal='0' />
+                <column datatype='string' name='sex' ordinal='1' />
+                <column datatype='string' name='age' ordinal='2' />
+                <column datatype='string' name='height' ordinal='3' />
+                <column datatype='string' name='weight' ordinal='4' />
+                <column datatype='string' name='team' ordinal='5' />
+                <column datatype='string' name='country_code' ordinal='6' />
+                <column datatype='string' name='country_name' ordinal='7' />
+                <column datatype='string' name='games' ordinal='8' />
+                <column datatype='integer' name='year' ordinal='9' />
+                <column datatype='string' name='season' ordinal='10' />
+                <column datatype='string' name='city' ordinal='11' />
+                <column datatype='string' name='sport' ordinal='12' />
+                <column datatype='string' name='event' ordinal='13' />
+                <column datatype='string' name='medal' ordinal='14' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='textscan.0hf7gz71u9lkkz10j14ay1s1r2mn' name='cleaned-population_by_country_data.csv' table='[cleaned-population_by_country_data#csv]' type='table'>
+            <columns character-set='windows-1252' header='no' locale='en_US' separator=','>
+              <column datatype='string' name='F1' ordinal='0' />
+              <column datatype='string' name='F2' ordinal='1' />
+              <column datatype='string' name='F3' ordinal='2' />
+              <column datatype='string' name='F4' ordinal='3' />
+              <column datatype='integer' name='F5' ordinal='4' />
+              <column datatype='integer' name='F6' ordinal='5' />
+              <column datatype='integer' name='F7' ordinal='6' />
+              <column datatype='integer' name='F8' ordinal='7' />
+              <column datatype='integer' name='F9' ordinal='8' />
+              <column datatype='integer' name='F10' ordinal='9' />
+              <column datatype='integer' name='F11' ordinal='10' />
+              <column datatype='integer' name='F12' ordinal='11' />
+              <column datatype='integer' name='F13' ordinal='12' />
+              <column datatype='integer' name='F14' ordinal='13' />
+              <column datatype='integer' name='F15' ordinal='14' />
+              <column datatype='integer' name='F16' ordinal='15' />
+              <column datatype='integer' name='F17' ordinal='16' />
+              <column datatype='integer' name='F18' ordinal='17' />
+              <column datatype='integer' name='F19' ordinal='18' />
+              <column datatype='integer' name='F20' ordinal='19' />
+              <column datatype='integer' name='F21' ordinal='20' />
+              <column datatype='integer' name='F22' ordinal='21' />
+              <column datatype='integer' name='F23' ordinal='22' />
+              <column datatype='integer' name='F24' ordinal='23' />
+              <column datatype='integer' name='F25' ordinal='24' />
+              <column datatype='integer' name='F26' ordinal='25' />
+              <column datatype='integer' name='F27' ordinal='26' />
+              <column datatype='integer' name='F28' ordinal='27' />
+              <column datatype='integer' name='F29' ordinal='28' />
+              <column datatype='integer' name='F30' ordinal='29' />
+              <column datatype='integer' name='F31' ordinal='30' />
+              <column datatype='integer' name='F32' ordinal='31' />
+              <column datatype='integer' name='F33' ordinal='32' />
+              <column datatype='integer' name='F34' ordinal='33' />
+              <column datatype='integer' name='F35' ordinal='34' />
+              <column datatype='integer' name='F36' ordinal='35' />
+              <column datatype='integer' name='F37' ordinal='36' />
+              <column datatype='integer' name='F38' ordinal='37' />
+              <column datatype='integer' name='F39' ordinal='38' />
+              <column datatype='integer' name='F40' ordinal='39' />
+              <column datatype='integer' name='F41' ordinal='40' />
+              <column datatype='integer' name='F42' ordinal='41' />
+              <column datatype='integer' name='F43' ordinal='42' />
+              <column datatype='integer' name='F44' ordinal='43' />
+              <column datatype='integer' name='F45' ordinal='44' />
+              <column datatype='integer' name='F46' ordinal='45' />
+              <column datatype='integer' name='F47' ordinal='46' />
+              <column datatype='integer' name='F48' ordinal='47' />
+              <column datatype='integer' name='F49' ordinal='48' />
+              <column datatype='integer' name='F50' ordinal='49' />
+              <column datatype='integer' name='F51' ordinal='50' />
+              <column datatype='integer' name='F52' ordinal='51' />
+              <column datatype='integer' name='F53' ordinal='52' />
+              <column datatype='integer' name='F54' ordinal='53' />
+              <column datatype='integer' name='F55' ordinal='54' />
+              <column datatype='integer' name='F56' ordinal='55' />
+              <column datatype='integer' name='F57' ordinal='56' />
+              <column datatype='integer' name='F58' ordinal='57' />
+              <column datatype='integer' name='F59' ordinal='58' />
+              <column datatype='integer' name='F60' ordinal='59' />
+              <column datatype='integer' name='F61' ordinal='60' />
+              <column datatype='integer' name='F62' ordinal='61' />
+              <column datatype='integer' name='F63' ordinal='62' />
+              <column datatype='string' name='F64' ordinal='63' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[F10]' value='[cleaned-population_by_country_data.csv].[F10]' />
+          <map key='[F11]' value='[cleaned-population_by_country_data.csv].[F11]' />
+          <map key='[F12]' value='[cleaned-population_by_country_data.csv].[F12]' />
+          <map key='[F13]' value='[cleaned-population_by_country_data.csv].[F13]' />
+          <map key='[F14]' value='[cleaned-population_by_country_data.csv].[F14]' />
+          <map key='[F15]' value='[cleaned-population_by_country_data.csv].[F15]' />
+          <map key='[F16]' value='[cleaned-population_by_country_data.csv].[F16]' />
+          <map key='[F17]' value='[cleaned-population_by_country_data.csv].[F17]' />
+          <map key='[F18]' value='[cleaned-population_by_country_data.csv].[F18]' />
+          <map key='[F19]' value='[cleaned-population_by_country_data.csv].[F19]' />
+          <map key='[F1]' value='[cleaned-population_by_country_data.csv].[F1]' />
+          <map key='[F20]' value='[cleaned-population_by_country_data.csv].[F20]' />
+          <map key='[F21]' value='[cleaned-population_by_country_data.csv].[F21]' />
+          <map key='[F22]' value='[cleaned-population_by_country_data.csv].[F22]' />
+          <map key='[F23]' value='[cleaned-population_by_country_data.csv].[F23]' />
+          <map key='[F24]' value='[cleaned-population_by_country_data.csv].[F24]' />
+          <map key='[F25]' value='[cleaned-population_by_country_data.csv].[F25]' />
+          <map key='[F26]' value='[cleaned-population_by_country_data.csv].[F26]' />
+          <map key='[F27]' value='[cleaned-population_by_country_data.csv].[F27]' />
+          <map key='[F28]' value='[cleaned-population_by_country_data.csv].[F28]' />
+          <map key='[F29]' value='[cleaned-population_by_country_data.csv].[F29]' />
+          <map key='[F2]' value='[cleaned-population_by_country_data.csv].[F2]' />
+          <map key='[F30]' value='[cleaned-population_by_country_data.csv].[F30]' />
+          <map key='[F31]' value='[cleaned-population_by_country_data.csv].[F31]' />
+          <map key='[F32]' value='[cleaned-population_by_country_data.csv].[F32]' />
+          <map key='[F33]' value='[cleaned-population_by_country_data.csv].[F33]' />
+          <map key='[F34]' value='[cleaned-population_by_country_data.csv].[F34]' />
+          <map key='[F35]' value='[cleaned-population_by_country_data.csv].[F35]' />
+          <map key='[F36]' value='[cleaned-population_by_country_data.csv].[F36]' />
+          <map key='[F37]' value='[cleaned-population_by_country_data.csv].[F37]' />
+          <map key='[F38]' value='[cleaned-population_by_country_data.csv].[F38]' />
+          <map key='[F39]' value='[cleaned-population_by_country_data.csv].[F39]' />
+          <map key='[F3]' value='[cleaned-population_by_country_data.csv].[F3]' />
+          <map key='[F40]' value='[cleaned-population_by_country_data.csv].[F40]' />
+          <map key='[F41]' value='[cleaned-population_by_country_data.csv].[F41]' />
+          <map key='[F42]' value='[cleaned-population_by_country_data.csv].[F42]' />
+          <map key='[F43]' value='[cleaned-population_by_country_data.csv].[F43]' />
+          <map key='[F44]' value='[cleaned-population_by_country_data.csv].[F44]' />
+          <map key='[F45]' value='[cleaned-population_by_country_data.csv].[F45]' />
+          <map key='[F46]' value='[cleaned-population_by_country_data.csv].[F46]' />
+          <map key='[F47]' value='[cleaned-population_by_country_data.csv].[F47]' />
+          <map key='[F48]' value='[cleaned-population_by_country_data.csv].[F48]' />
+          <map key='[F49]' value='[cleaned-population_by_country_data.csv].[F49]' />
+          <map key='[F4]' value='[cleaned-population_by_country_data.csv].[F4]' />
+          <map key='[F50]' value='[cleaned-population_by_country_data.csv].[F50]' />
+          <map key='[F51]' value='[cleaned-population_by_country_data.csv].[F51]' />
+          <map key='[F52]' value='[cleaned-population_by_country_data.csv].[F52]' />
+          <map key='[F53]' value='[cleaned-population_by_country_data.csv].[F53]' />
+          <map key='[F54]' value='[cleaned-population_by_country_data.csv].[F54]' />
+          <map key='[F55]' value='[cleaned-population_by_country_data.csv].[F55]' />
+          <map key='[F56]' value='[cleaned-population_by_country_data.csv].[F56]' />
+          <map key='[F57]' value='[cleaned-population_by_country_data.csv].[F57]' />
+          <map key='[F58]' value='[cleaned-population_by_country_data.csv].[F58]' />
+          <map key='[F59]' value='[cleaned-population_by_country_data.csv].[F59]' />
+          <map key='[F5]' value='[cleaned-population_by_country_data.csv].[F5]' />
+          <map key='[F60]' value='[cleaned-population_by_country_data.csv].[F60]' />
+          <map key='[F61]' value='[cleaned-population_by_country_data.csv].[F61]' />
+          <map key='[F62]' value='[cleaned-population_by_country_data.csv].[F62]' />
+          <map key='[F63]' value='[cleaned-population_by_country_data.csv].[F63]' />
+          <map key='[F64]' value='[cleaned-population_by_country_data.csv].[F64]' />
+          <map key='[F6]' value='[cleaned-population_by_country_data.csv].[F6]' />
+          <map key='[F7]' value='[cleaned-population_by_country_data.csv].[F7]' />
+          <map key='[F8]' value='[cleaned-population_by_country_data.csv].[F8]' />
+          <map key='[F9]' value='[cleaned-population_by_country_data.csv].[F9]' />
+          <map key='[age]' value='[cleaned-historical_athletes_dataset.csv].[age]' />
+          <map key='[city]' value='[cleaned-historical_athletes_dataset.csv].[city]' />
+          <map key='[country_code (cleaned-historical_athletes_dataset.csv)]' value='[cleaned-historical_athletes_dataset.csv].[country_code]' />
+          <map key='[country_code]' value='[cleaned-historical_and_current_country_codes.csv].[country_code]' />
+          <map key='[country_name (cleaned-historical_athletes_dataset.csv)]' value='[cleaned-historical_athletes_dataset.csv].[country_name]' />
+          <map key='[country_name]' value='[cleaned-historical_and_current_country_codes.csv].[country_name]' />
+          <map key='[event]' value='[cleaned-historical_athletes_dataset.csv].[event]' />
+          <map key='[games]' value='[cleaned-historical_athletes_dataset.csv].[games]' />
+          <map key='[height]' value='[cleaned-historical_athletes_dataset.csv].[height]' />
+          <map key='[medal]' value='[cleaned-historical_athletes_dataset.csv].[medal]' />
+          <map key='[name]' value='[cleaned-historical_athletes_dataset.csv].[name]' />
+          <map key='[season]' value='[cleaned-historical_athletes_dataset.csv].[season]' />
+          <map key='[sex]' value='[cleaned-historical_athletes_dataset.csv].[sex]' />
+          <map key='[sport]' value='[cleaned-historical_athletes_dataset.csv].[sport]' />
+          <map key='[team]' value='[cleaned-historical_athletes_dataset.csv].[team]' />
+          <map key='[weight]' value='[cleaned-historical_athletes_dataset.csv].[weight]' />
+          <map key='[year]' value='[cleaned-historical_athletes_dataset.csv].[year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned-historical_and_current_country_codes.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ibm-5348_P100-1997&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_code]</local-name>
+            <parent-name>[cleaned-historical_and_current_country_codes.csv]</parent-name>
+            <remote-alias>country_code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_name]</local-name>
+            <parent-name>[cleaned-historical_and_current_country_codes.csv]</parent-name>
+            <remote-alias>country_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned-historical_athletes_dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[cleaned-historical_athletes_dataset.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sex]</local-name>
+            <parent-name>[cleaned-historical_athletes_dataset.csv]</parent-name>
+            <remote-alias>sex</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[cleaned-historical_athletes_dataset.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>height</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[height]</local-name>
+            <parent-name>[cleaned-historical_athletes_dataset.csv]</parent-name>
+            <remote-alias>height</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weight</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[weight]</local-name>
+            <parent-name>[cleaned-historical_athletes_dataset.csv]</parent-name>
+            <remote-alias>weight</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team]</local-name>
+            <parent-name>[cleaned-historical_athletes_dataset.csv]</parent-name>
+            <remote-alias>team</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_code (cleaned-historical_athletes_dataset.csv)]</local-name>
+            <parent-name>[cleaned-historical_athletes_dataset.csv]</parent-name>
+            <remote-alias>country_code</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_name (cleaned-historical_athletes_dataset.csv)]</local-name>
+            <parent-name>[cleaned-historical_athletes_dataset.csv]</parent-name>
+            <remote-alias>country_name</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>games</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[games]</local-name>
+            <parent-name>[cleaned-historical_athletes_dataset.csv]</parent-name>
+            <remote-alias>games</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[cleaned-historical_athletes_dataset.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[cleaned-historical_athletes_dataset.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[cleaned-historical_athletes_dataset.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sport</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sport]</local-name>
+            <parent-name>[cleaned-historical_athletes_dataset.csv]</parent-name>
+            <remote-alias>sport</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>event</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[event]</local-name>
+            <parent-name>[cleaned-historical_athletes_dataset.csv]</parent-name>
+            <remote-alias>event</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>medal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[medal]</local-name>
+            <parent-name>[cleaned-historical_athletes_dataset.csv]</parent-name>
+            <remote-alias>medal</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ibm-5348_P100-1997&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;false&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F6]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F6</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F7]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F7</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F8]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F8</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F9</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F9]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F9</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F10</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F10]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F10</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F11</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F11]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F11</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F12</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F12]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F12</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F13</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F13]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F13</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F14</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F14]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F14</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F15</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F15]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F15</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F16</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F16]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F16</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F17</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F17]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F17</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F18</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F18]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F18</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F19</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F19]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F19</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F20</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F20]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F20</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F21</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F21]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F21</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F22</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F22]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F22</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F23</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F23]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F23</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F24</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F24]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F24</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F25</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F25]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F25</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F26</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F26]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F26</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F27</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F27]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F27</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F28</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F28]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F28</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F29</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F29]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F29</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F30</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F30]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F30</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F31</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F31]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F31</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F32</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F32]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F32</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F33</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F33]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F33</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F34</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F34]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F34</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F35</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F35]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F35</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F36</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F36]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F36</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F37</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F37]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F37</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F38</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F38]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F38</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F39</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F39]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F39</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F40</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F40]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F40</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F41</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F41]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F41</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F42</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F42]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F42</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F43</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F43]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F43</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F44</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F44]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F44</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F45</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F45]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F45</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F46</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F46]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F46</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F47</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F47]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F47</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F48</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F48]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F48</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F49</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F49]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F49</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F50</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F50]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F50</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F51</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F51]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F51</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F52</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F52]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F52</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F53</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F53]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F53</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F54</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F54]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F54</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F55</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F55]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F55</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F56</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F56]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F56</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F57</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F57]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F57</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F58</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F58]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F58</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F59</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F59]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F59</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F60</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F60]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F60</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F61</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F61]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F61</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F62</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F62]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F62</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F63</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F63]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F63</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F64</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F64]</local-name>
+            <parent-name>[cleaned-population_by_country_data.csv]</parent-name>
+            <remote-alias>F64</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Age' datatype='string' name='[age]' role='dimension' type='nominal' />
+      <column aggregation='None' caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column aggregation='None' caption='Country Code (Cleaned-Historical Athletes Dataset.Csv)' datatype='string' name='[country_code (cleaned-historical_athletes_dataset.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='None' caption='Country Code' datatype='string' name='[country_code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='None' caption='Country Name (Cleaned-Historical Athletes Dataset.Csv)' datatype='string' name='[country_name (cleaned-historical_athletes_dataset.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='None' caption='Country Name' datatype='string' name='[country_name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Event' datatype='string' name='[event]' role='dimension' type='nominal' />
+      <column caption='Games' datatype='string' name='[games]' role='dimension' type='nominal' />
+      <column caption='Height' datatype='string' name='[height]' role='dimension' type='nominal' />
+      <column caption='Medal' datatype='string' name='[medal]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Season' datatype='string' name='[season]' role='dimension' type='nominal' />
+      <column caption='Sex' datatype='string' name='[sex]' role='dimension' type='nominal' />
+      <column caption='Sport' datatype='string' name='[sport]' role='dimension' type='nominal' />
+      <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+      <column caption='Weight' datatype='string' name='[weight]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.804124' measure-ordering='alphabetic' measure-percentage='0.195876' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{23AACA03-FE35-4927-B60E-D6F105C60C00}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{94B64211-EF07-400E-B68C-671A789346DC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
